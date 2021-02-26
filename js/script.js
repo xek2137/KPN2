@@ -33,3 +33,23 @@ else if (playerInput == 3) {
 }
 
 printMessage('Twoj ruch to: ' + playerMove);
+
+
+if (computerMove == playerMove) {
+    printMessage('Remis, zagraj jeszcze raz!')
+}
+else if (playerMove != 1 && 2 && 3) {
+    printMessage('Niewlasciwy wybor, zagraj jeszcze raz!');
+}
+else if (computerMove == 'kamien' && playerMove == 'papier') {
+    printMessage('Ty wygrywasz!')
+}
+else if (computerMove == 'papier' && playerMove == 'nozyce') {
+    printMessage('Ty wygrywasz!');
+}
+else if (computerMove == 'nozyce' && playerMove == 'kamien') {
+    printMessage('Ty wygrywasz!');
+}
+else {
+    printMessage('Przegrywasz!');
+}
