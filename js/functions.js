@@ -106,5 +106,3 @@ const fadeOut = function (tweenMax = TweenMax) {
 		ease: Power2.easeInOut
 	});
 }
-
-
