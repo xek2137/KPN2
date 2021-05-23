@@ -9,15 +9,26 @@
 
 <body>
     <div class="container">
-        <div id="buttons">
-            <button id="choose-rock">kamien</button>
-            <button id="choose-paper">papier</button>
-            <button id="choose-scissors">nozyce</button>
+        <div class="overlay">
+            <p class="screen">KPN</p>
+            <div class="intro">
+                <button class="myBtn button" onclick="fadeOut()">ZAGRAJ</button>
+            </div>
         </div>
-        <div id="messages"></div>
+        <div class="overlay-2"></div>
+        <div class="game-box">
+            <div class="game-buttons-box" id="buttons">
+                <button class="game-button" id="choose-rock">K</button>
+                <button class="game-button" id="choose-paper">P</button>
+                <button class="game-button" id="choose-scissors">N</button>
+            </div>
+            <div id="messages"></div>
+            <div class="score-box"></div>
+        </div>
     </div>
     <script src="js/functions.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
 </body>
 
 </html>
